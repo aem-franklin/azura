@@ -261,6 +261,8 @@ main .section.highlight {
 	 align-items: center;
 	 justify-content: space-between;
 	 flex-wrap: wrap;
+	 background: linear-gradient(to right, #001f4d, #66b2ff);
+	 padding: 1rem 0;
 }
  .header nav {
 	 width: 100%;
