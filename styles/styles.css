@@ -434,3 +434,58 @@ main .section.highlight {
 .our-services .columns-wrapper > .columns > div {
    width: 74vw;
 }
+
+/* Gradient background with image overlay */
+.refer-a-patient.columns-container {
+  position: relative;
+  background: linear-gradient(to bottom, #002b5c, #a2c9f3); /* dark blue to light blue gradient */
+  overflow: hidden;
+}
+
+/* Overlay image inside default-content-wrapper */
+.refer-a-patient .default-content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.refer-a-patient .default-content-wrapper picture,
+.refer-a-patient .default-content-wrapper img {
+  position: absolute;
+  top: 0;
+  left: -22px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 1; /* Adjust for overlay transparency */
+  z-index: 76;
+}
+
+/* Columns-wrapper overlays the default-content-wrapper */
+.refer-a-patient .columns-wrapper {
+  position: relative;
+   /* solid dark blue background */
+  z-index: 3;
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.refer-a-patient div.columns-wrapper > div > div > div:nth-child(2) {
+	color: #fff;
+}
+
+.refer-a-patient .columns-wrapper .columns-img-col {
+ background-color: #002b5c;
+}
+
+.refer-a-patient .columns-wrapper .columns-img-col picture {
+	position: relative;
+    left: -253px;
+    top: -21px;
+}
+
+/* Zoomed-in image effect inside columns-wrapper */
+.refer-a-patient .columns-img-col picture img {
+  width: 120%;
+  height: auto;
+  transform: scale(1.1);
+  object-fit: cover;
+}
