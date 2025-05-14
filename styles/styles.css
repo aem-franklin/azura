@@ -368,7 +368,7 @@ main .section.highlight {
   background-position: center;
   background-repeat: no-repeat;
   padding: 0;
-  min-height: 140vh;
+  min-height: 590px;
 }
 
 /* Hide the actual <picture> and set its image as background */
