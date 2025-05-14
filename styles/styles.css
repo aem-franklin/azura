@@ -234,7 +234,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
 }
 
 main > .section > div {
@@ -387,6 +387,50 @@ main .section.highlight {
   width: 40%;
   margin: 0 !important;
   position: relative;
-  top: 35vh; /* Half of the screen height */
+  top: 35vh;
   left: 4vw;
+}
+
+
+.our-services {
+  position: relative;
+  overflow: hidden;
+}
+
+.our-services .default-content-wrapper {
+  display: none;
+}
+
+.our-services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./media_1450bc910ee1f4d09ea09b7d2241999fcbb958ace.jpg?width=2000&format=jpg&optimize=medium');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.our-services .columns-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.our-services .columns-wrapper > .columns {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(0deg);
+  padding: 2rem 6rem;
+  max-width: 700px;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.our-services .columns-wrapper > .columns > div {
+   width: 74vw;
 }
