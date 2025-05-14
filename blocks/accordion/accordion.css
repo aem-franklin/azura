@@ -1,10 +1,13 @@
 .accordion details {
   border: 1px solid #dadada;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 /* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
-  margin-top: 24px;
+  margin-top: -8px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .accordion details p {
