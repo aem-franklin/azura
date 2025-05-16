@@ -547,3 +547,54 @@ main .section.highlight {
   height: 100%;
   object-fit: cover;
 }
+
+.footer-wrapper {
+  background-color: #071B45;
+  color: #fff;
+  border-top: 6px solid;
+  border-image: linear-gradient(to right, pink, purple) 1;
+  padding: 1rem;
+}
+
+.footer-wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.footer-wrapper .default-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper p {
+  margin: 0.5rem 0;
+}
+
+.footer-wrapper p:first-of-type {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.footer-wrapper p:last-of-type {
+  flex: 1 1 50%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .footer-wrapper .default-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-wrapper p {
+    flex: 1 1 100%;
+    text-align: center !important;
+  }
+}
