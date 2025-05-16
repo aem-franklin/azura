@@ -501,6 +501,23 @@ main .section.highlight {
   padding: 2rem 0;
 }
 
+.section.explore-locations .button {
+  color: #0033a0; /* Dark blue text */
+  background-color: #ffffff; /* White background */
+  border: 2px solid #0033a0;
+  border-radius: 8px; /* Rounded corners */
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.section.explore-locations .button:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: #0033a0; /* Dark blue background on hover */
+}
+
 .section.explore-locations .default-content-wrapper {
   /* position: relative; */
   width: 50%;
