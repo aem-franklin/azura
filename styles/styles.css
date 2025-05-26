@@ -372,7 +372,7 @@ main .section.highlight {
 }
 \
 .who-we-are .default-content-wrapper h3 {
-	font-size: 42px;
+	font-size: 42px !important;
 }
 
 .who-we-are .default-content-wrapper h3 em {
