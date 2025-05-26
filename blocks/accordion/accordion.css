@@ -30,7 +30,6 @@
 .accordion details summary::after {
   content: '';
   position: absolute;
-  top: 50%;
   right: 18px;
   width: 6px;
   height: 6px;
