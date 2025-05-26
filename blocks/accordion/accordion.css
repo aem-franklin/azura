@@ -4,7 +4,6 @@
   border-radius: 5px;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: -8px;
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
