@@ -357,6 +357,7 @@ main .section.highlight {
 
 .find-a-center .default-content-wrapper h2 em {
 	color: #6A318A;
+	border-bottom: 2px solid #6A318A;
 }
 
 /* 3. Style who-we-are heading */
