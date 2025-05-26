@@ -429,7 +429,7 @@ main .section.highlight {
   display: none;
 }
 
-.accordion-overlay .accordion-item summary::before {
+.accordion-overlay .accordion-item summary::after {
   content: "+";
   color: white;
   background: purple;
@@ -463,7 +463,7 @@ main .section.highlight {
   background: #cce4f7;
 }
 
-.accordion-overlay .accordion-item[open] summary::before {
+.accordion-overlay .accordion-item[open] summary::after {
   content: "-";
   background: purple;
 }
@@ -471,6 +471,7 @@ main .section.highlight {
 .accordion-overlay .accordion-item[open] .accordion-item-body {
   padding: 1rem;
   color: white;
+	background: #66b2ff;
   max-height: 1000px; /* large enough to show content */
 }
 
