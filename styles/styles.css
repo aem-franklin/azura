@@ -358,10 +358,10 @@ main .section.highlight {
 .find-a-center .default-content-wrapper h2 em {
 	color: #6A318A;
 	display: inline-block;
-  background-image: linear-gradient(to right, #ED484F, #6a318a);
-  background-size: 100% 5px; /* full width, 2px height */
-  background-repeat: no-repeat;
-  background-position: 0 100%;
+  	background-image: linear-gradient(to right, #ED484F, #6a318a);
+  	background-size: 100% 5px; /* full width, 2px height */
+  	background-repeat: no-repeat;
+  	background-position: 0 100%;
 }
 
 /* 3. Style who-we-are heading */
@@ -369,6 +369,19 @@ main .section.highlight {
   background: white;
   text-align: center;
   padding: 2rem;
+}
+\
+.who-we-are .default-content-wrapper h3 {
+	font-size: 42px;
+}
+
+.who-we-are .default-content-wrapper h3 em {
+	color: #6A318A;
+	display: inline-block;
+  	background-image: linear-gradient(to right, #ED484F, #6a318a);
+  	background-size: 100% 5px; /* full width, 2px height */
+  	background-repeat: no-repeat;
+  	background-position: 0 100%;
 }
 
 /* 4. Style accordion-overlay image as background */
