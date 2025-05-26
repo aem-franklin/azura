@@ -407,7 +407,6 @@ main .section.highlight {
 
 .accordion-overlay .accordion-item {
   border: none;
-  margin-bottom: 1rem;
   overflow: hidden;
   transition: background-color 0.3s ease;
 }
