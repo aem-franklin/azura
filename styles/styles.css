@@ -405,6 +405,75 @@ main .section.highlight {
   background-image: url('./media_165d74cd2db502f0f256621f020e817b7848adcff.jpg?width=2000&format=jpg&optimize=medium');
 }
 
+.accordion-overlay .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-overlay .accordion-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem;
+  background: white;
+  color: #003366; /* Dark blue */
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-overlay .accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-overlay .accordion-item summary::before {
+  content: "+";
+  color: white;
+  background: purple;
+  border-radius: 50%;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 0.75rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.accordion-overlay .accordion-item .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1rem;
+  color: #003366;
+  background: white;
+  transition: max-height 0.5s ease, padding 0.5s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.accordion-overlay .accordion-item[open] {
+  background-color: #cce4f7;
+}
+
+.accordion-overlay .accordion-item[open] summary {
+  color: white;
+  background: #cce4f7;
+}
+
+.accordion-overlay .accordion-item[open] summary::before {
+  content: "-";
+  background: purple;
+}
+
+.accordion-overlay .accordion-item[open] .accordion-item-body {
+  padding: 1rem;
+  color: white;
+  max-height: 1000px; /* large enough to show content */
+}
+
 /* 5. Accordion-wrapper overlaps image and takes 50% of the screen height */
 .accordion-wrapper {
   width: 40%;
