@@ -347,12 +347,16 @@ main .section.highlight {
   width: 80%;
   position: absolute;
   border-radius: 10px;
-  top: 250px; /* Adjust this value to overlap more/less */
+  top: 355px; /* Adjust this value to overlap more/less */
   height: 250px;
   transform: translate(12%, 0);
   background: white;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.find-a-center .default-content-wrapper h2 em {
+	color: #6A318A;
 }
 
 /* 3. Style who-we-are heading */
